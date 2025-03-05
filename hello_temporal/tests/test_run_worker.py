@@ -27,6 +27,9 @@ async def test_execute_workflow():
                 task_queue=task_queue_name,
             )
 
+# The above code tests the Workflow and invokes the actual say_hello Activity. However,
+# you may want to test your Workflows and mock out the Activity so you can see how your
+# Workflow responds to different inputs and results.
 
 @activity.defn(name="say_hello")
 async def say_hello_mocked(name: str) -> str:
