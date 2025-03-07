@@ -27,7 +27,7 @@ Me following along various Temporal tutorials in Python
         $ temporal server start-dev
         $ python run_worker.py
         $ python starter.py
-        $ curl -X POST http://localhost:3000/book \  # Succeeding call
+        $ curl -X POST http://localhost:5000/book \  # Succeeding call
             -H "Content-Type: application/json" \
             -d '{
                 "name": "John Doe",
@@ -36,7 +36,7 @@ Me following along various Temporal tutorials in Python
                 "hotel": "valid-hotel-id",
                 "flight": "valid-flight-id"
             }'
-        $ curl -X POST http://localhost:3000/book \  # Failing call
+        $ curl -X POST http://localhost:5000/book \  # Failing call
             -H "Content-Type: application/json" \
             -d '{
                 "name": "Jane Smith",
