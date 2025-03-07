@@ -7,6 +7,7 @@ Me following along various Temporal tutorials in Python
     - Instructions:
         ```
         $ cd hello_temporal
+        $ pip install -r requirements.txt
 
         # Run tests
         $ pytest
@@ -22,6 +23,7 @@ Me following along various Temporal tutorials in Python
     - Instructions:
         ```
         $ cd trip_booking
+        $ pip install -r requirements.txt
 
         # Run workflow
         $ temporal server start-dev
